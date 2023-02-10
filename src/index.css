@@ -1,13 +1,68 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.main{
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.button {
+  
+  -webkit-border-radius: 60px;
+  border-radius: 100px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 30px 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  animation: glowing 3000ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #D08179;
+    box-shadow: 0 0 3px #D08179;
+  }
+  50% {
+    background-color: #5F1B14;
+    box-shadow: 0 0 10px #5F1B14;
+  }
+  100% {
+    background-color: #D08179;
+    box-shadow: 0 0 3px #D08179;
+  }
+  
+}
+
+.button-container{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 200px; /* The padding is what creates the box */
+  border: 10px none red; /* solid parameter to see outline of box */
+  box-sizing: border-box;
 }

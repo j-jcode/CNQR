@@ -1,3 +1,18 @@
+import "./assets/styles.css";
+import Main from './components/main'; 
+import Button from './components/button'; 
+
+
+function App() {
+  return (
+    <div className="App">
+      <Main />
+      <Button />
+    </div>
+  );
+}
+
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,5 +36,5 @@ function App() {
     </div>
   );
 }
-
+*/
 export default App;

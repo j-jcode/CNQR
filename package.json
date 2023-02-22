@@ -2,6 +2,7 @@
   "name": "wavvs",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@react-three/fiber": "^8.10.1",
     "@testing-library/jest-dom": "^5.16.5",
